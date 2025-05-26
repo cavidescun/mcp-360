@@ -1,0 +1,28 @@
+{
+  "name": "mcp-360",
+  "version": "0.0.1",
+  "description": "mcp-360 MCP server",
+  "type": "module",
+  "bin": {
+    "mcp-360": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && mcp-build",
+    "watch": "tsc --watch",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "mcp-framework": "^0.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.19.0"
+  }
+}
